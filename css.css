@@ -14,9 +14,16 @@ h2 {
   
 }
 .datum {
+display:inline-block;
 
 }
 
 .matchup {
 	
+display:inline-block;
+}
+
+.result
+{
+display:inline-block;
 }
