@@ -6,7 +6,7 @@
   function kreiere() {
     const para = document.createElement("p");
     para.innerText = "This is a paragraph.";
-    document.body.appendChild(para); 
+    document.getElementById("table").appendChild(para); 
   }
 </script>
     
@@ -19,8 +19,8 @@
 <button type="button" onclick="javascript:kreiere()"> 
   Click Me!</button>
     
-<!---    <div class="table">  
-      <p class = "inline" "spiel">
+<div class="table">  
+<!---          <p class = "inline" "spiel">
         <div class = "inline"> 
         <span>datum</span> 
         <span>matchup</span> 
