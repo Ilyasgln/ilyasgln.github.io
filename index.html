@@ -13,9 +13,17 @@
     match.innerText = date + " " + matchup + " " + result;
     document.getElementById("table").appendChild(match);
     
-    const game = document.createElement("span");
-    game.innerText = date + " " + matchup + " " + result;
-    document.getElementById("table").appendChild(game); 
+    const date = document.createElement("span");
+    date.innerText = date + " ";
+    document.getElementById("match").appendChild(date); 
+    
+    const matchup = document.createElement("span");
+    matchup.innerText = matchup + " ";
+    document.getElementById("match").appendChild(matchup);
+    
+    const result = document.createElement("span");
+    result.innerText = result;
+    document.getElementById("match").appendChild(result);
   }
 </script>
     
