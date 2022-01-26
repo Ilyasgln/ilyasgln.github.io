@@ -8,9 +8,13 @@
     let matchup = "FC Bayern vs FC Köln";
     let result = "4:0"
     
-    const para = document.createElement("p");
-    para.innerText = date + " " + matchup + " " + result;
-    document.getElementById("table").appendChild(para); 
+    const match = document.createElement("p id='match'");
+    match.innerText = date + " " + matchup + " " + result;
+    document.getElementById("table").appendChild(match);
+    
+    const game = document.createElement("span");
+    game.innerText = date + " " + matchup + " " + result;
+    document.getElementById("table").appendChild(game); 
   }
 </script>
     
