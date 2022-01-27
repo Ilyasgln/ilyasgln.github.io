@@ -45,7 +45,8 @@ function kreiere() {
   }
 
 function getjson() {
-text = fetch('http://ip172-18-0-8-c7p8kp5mrepg00c9hgpg-9080.direct.labs.play-with-docker.com/system/properties-new')
+  text = fetch('https://ghibliapi.herokuapp.com/films')
+  //text = fetch('http://ip172-18-0-8-c7p8kp5mrepg00c9hgpg-9080.direct.labs.play-with-docker.com/system/properties-new')
   .catch(error => 
      {console.error('There has been a problem with your fetch operation:', error)
      }
