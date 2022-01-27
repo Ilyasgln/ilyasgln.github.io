@@ -1,7 +1,7 @@
 
 let text = ' { "match_results":[ ' +
   '{"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"},' +
- ' {"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"}, ' + 
+  '{"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"}, ' + 
   '{"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"}, ' +
   '{"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"}, ' +
   '{"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"}, ' +
