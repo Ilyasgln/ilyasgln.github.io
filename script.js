@@ -28,7 +28,7 @@ function kreiere(data) {
       match_element.appendChild(matchup);
 
       const result = document.createElement("img");
-      result.innerText = example_result;
+      result.src = example_result;
       match_element.appendChild(result);
 
       const br = document.createElement("br");
