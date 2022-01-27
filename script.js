@@ -1,23 +1,21 @@
 
-"match_results":[
-  {"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"}, 
-  {"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"}, 
-  {"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"},
-  {"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"}, 
-  {"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"}, 
-  {"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"},
-  {"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"}, 
-  {"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"}, 
-
-]
+let text = ' { "match_results":[ ' +
+  '{"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"},' +
+ ' {"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"}, ' + 
+  '{"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"}, ' +
+  '{"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"}, ' +
+  '{"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"}, ' +
+  '{"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"}, ' +
+  '{"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"}, ' +
+  '{"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"} ]}';
 
 
-  
+const resultJSON = JSON.parse(text);  
 
 function kreiere() {
-    let example_date = match_results[0].date;
+    let example_date = resultJSON.match_results[0].date;
     let example_matchup = "FC Bayern vs FC Köln";
-    let example_result = "4:0"
+    let example_result = "4:0";
     
     const match = document.createElement("p");
     match.id = "match";
