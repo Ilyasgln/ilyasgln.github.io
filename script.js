@@ -6,11 +6,10 @@ function addSum(a,b) {
 
 function kreiere(data) {
   
-  
   for(let i = 0; i < data.length; i++){
-      let example_date = data[i].title;
-      let example_matchup = data[i].description;
-      let example_result = data[i].image;
+      let title = data[i].title;
+      let desc = data[i].description;
+      let image = data[i].image;
     
       const match = document.createElement("p");
       match.id = "match";
@@ -20,16 +19,15 @@ function kreiere(data) {
 
       const date = document.createElement("div");
       date.innerText = example_date + " ";
-      match_element.appendChild(date); 
-
+      match_element.appendChild(title); 
 
       const matchup = document.createElement("div");
       matchup.innerText = example_matchup + " ";
-      match_element.appendChild(matchup);
+      match_element.appendChild(desc);
 
       const result = document.createElement("img");
       result.src = example_result;
-      match_element.appendChild(result);
+      match_element.appendChild(image);
 
       const br = document.createElement("br");
       match_element.appendChild(br);
