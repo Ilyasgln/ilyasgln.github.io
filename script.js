@@ -13,7 +13,7 @@ let text = ' { "match_results":[ ' +
 const resultJSON = JSON.parse(text);  
 
 function kreiere() {
-    for(let i = 0; i < resultJSON.length; i++){
+    for(let i = 0; i < resultJSON.match_results.length; i++){
       let example_date = resultJSON.match_results[i].date;
       let example_matchup = resultJSON.match_results[i].matchup;
       let example_result = resultJSON.match_results[i].result;
