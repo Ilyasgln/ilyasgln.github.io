@@ -1,5 +1,20 @@
 
-  function kreiere() {
+"match_results":[
+  {"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"}, 
+  {"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"}, 
+  {"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"},
+  {"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"}, 
+  {"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"}, 
+  {"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"},
+  {"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"}, 
+  {"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"}, 
+
+]
+
+
+  
+
+function kreiere() {
     let example_date = "24.01.22";
     let example_matchup = "FC Bayern vs FC Köln";
     let example_result = "4:0"
