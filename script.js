@@ -45,7 +45,7 @@ function kreiere() {
   }
 
 function getjson() {
-text = fetch('http://ip172-18-0-34-c7p6n4nnjsv000aig9a0-9080.direct.labs.play-with-docker.com/system/properties-new');
+text = fetch('http://ip172-18-0-8-c7p8kp5mrepg00c9hgpg.direct.labs.play-with-docker.com/system/properties-new');
   
 }
   
