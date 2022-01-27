@@ -1,0 +1,30 @@
+Anleitung zum anlegen eines Docker-Servers:
+
+apk add openjdk11
+apk add maven
+git clone https://github.com/openliberty/guide-docker.git [Die Website zum aufrufen der befehle:(https://openliberty.io/guides/docker.html#getting-started)]
+cd guide-docker
+ls
+cd finish
+mvn --help |more
+mvn clean install
+docker build -t [name des Images] .
+docker images [zur kontrolle]
+docker container list [auch zur kontrolle]
+docker run -dp 9080:9080 [name des Images]
+cd src/main/liberty/config
+vim server.xml
+[angekommen im Vim]
+[i drücken um ins insert feld zu gelangen]
+
+[einfügen]:
+
+<cors domain="/configurations/simple"
+    allowedOrigins="openliberty.io"
+    allowedMethods="GET"
+    allowCredentials="true"
+    exposeHeaders="MyHeader"/>
+
+
+
+
