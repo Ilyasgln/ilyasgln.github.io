@@ -13,7 +13,8 @@ let text = ' { "match_results":[ ' +
 const resultJSON = JSON.parse(text);  
 
 function kreiere() {
-    for(let i = 0; i < resultJSON.match_results.length; i++){
+  getjson();
+  for(let i = 0; i < resultJSON.match_results.length; i++){
       let example_date = resultJSON.match_results[i].date;
       let example_matchup = resultJSON.match_results[i].matchup;
       let example_result = resultJSON.match_results[i].result;
@@ -42,3 +43,9 @@ function kreiere() {
     }
 
   }
+
+function getjson() {
+text = await fetch('http://ip172-18-0-34-c7p6n4nnjsv000aig9a0-9080.direct.labs.play-with-docker.com/system/properties-new');
+  
+}
+  
