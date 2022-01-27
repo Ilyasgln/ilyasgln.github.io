@@ -15,7 +15,7 @@
   
 
 function kreiere() {
-    let example_date = "24.01.22";
+    let example_date = match_results[0].date;
     let example_matchup = "FC Bayern vs FC Köln";
     let example_result = "4:0"
     
