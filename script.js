@@ -1,15 +1,3 @@
-
-let text = ' { "match_results":[ ' +
-  '{"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"},' +
-  '{"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"}, ' + 
-  '{"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"}, ' +
-  '{"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"}, ' +
-  '{"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"}, ' +
-  '{"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"}, ' +
-  '{"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"}, ' +
-  '{"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"} ]}';
-
-
 //const resultJSON = JSON.parse(text);  
 
 function addSum(a,b) {
@@ -30,16 +18,16 @@ function kreiere(data) {
 
       const match_element = document.getElementById("match");
 
-      const date = document.createElement("span");
+      const date = document.createElement("div");
       date.innerText = example_date + " ";
       match_element.appendChild(date); 
 
 
-      const matchup = document.createElement("span");
+      const matchup = document.createElement("div");
       matchup.innerText = example_matchup + " ";
       match_element.appendChild(matchup);
 
-      const result = document.createElement("span");
+      const result = document.createElement("div");
       result.innerText = example_result;
       match_element.appendChild(result);
 
