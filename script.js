@@ -10,14 +10,19 @@ let text = ' { "match_results":[ ' +
   '{"date":"24.01.22", "matchup":"Fc Bayern vs Fc Köln", "result":"4:0"} ]}';
 
 
-const resultJSON = JSON.parse(text);  
+//const resultJSON = JSON.parse(text);  
 
-function kreiere() {
-  getjson();
-  for(let i = 0; i < resultJSON.match_results.length; i++){
-      let example_date = resultJSON.match_results[i].date;
-      let example_matchup = resultJSON.match_results[i].matchup;
-      let example_result = resultJSON.match_results[i].result;
+function addSum(a,b) {
+  return a + b
+}
+
+function kreiere(data) {
+  
+  
+  for(let i = 0; i < data.length; i++){
+      let example_date = data[i].title;
+      let example_matchup = data[i].description;
+      let example_result = data[i].image;
     
       const match = document.createElement("p");
       match.id = "match";
@@ -48,7 +53,7 @@ function getjson() {
   fetch('https://ghibliapi.herokuapp.com/films')
   //text = fetch('http://ip172-18-0-8-c7p8kp5mrepg00c9hgpg-9080.direct.labs.play-with-docker.com/system/properties-new')
   .then(response => response.json())
-  .then(data => console.log(data))
+  .then(data => kreiere(data))
   .catch(error => 
      {console.error('There has been a problem with your fetch operation:', error)
      }
