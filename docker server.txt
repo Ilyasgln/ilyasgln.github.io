@@ -19,8 +19,8 @@ vim server.xml
 
 [einfügen]:
 
-<cors domain="/configurations/simple"
-    allowedOrigins="openliberty.io"
+<cors domain="/system/properties-new"
+    allowedOrigins="*"
     allowedMethods="GET"
     allowCredentials="true"
     exposeHeaders="MyHeader"/>
