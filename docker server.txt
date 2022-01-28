@@ -24,6 +24,19 @@ vim server.xml
     allowedMethods="GET"
     allowCredentials="true"
     exposeHeaders="MyHeader"/>
+    
+    esc, :wq 
+    
+[neu bauen]:
+
+mvn clean install
+docker build -t [name des Images] .
+docker images [zur kontrolle]
+docker container list [auch zur kontrolle]
+docker run -dp 9080:9080 [name des Images]
+
+
+
 
 
 
