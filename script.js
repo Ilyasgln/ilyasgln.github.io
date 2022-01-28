@@ -37,7 +37,7 @@ function kreiere(data) {
 
 function getjson() {
   //fetch('https://ghibliapi.herokuapp.com/films')
-   fetch('http://ip172-18-0-54-c7pq82nnjsv0009k0vvg-9080.direct.labs.play-with-docker.com/system/properties-new')
+   fetch('http://ip172-18-0-43-c7pusgtmrepg00fnq1s0-9080.direct.labs.play-with-docker.com/system/properties-new')
   .then(response => response.json())
   //.then(data => kreiere(data))
   .then(data => console.log(data))
