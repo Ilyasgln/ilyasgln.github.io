@@ -17,15 +17,15 @@ function kreiere(data) {
 
       const match_element = document.getElementById("match");
 
-      const date = document.createElement("div");
+      const date = document.createElement("span");
       date.innerText = example_date + " ";
       match_element.appendChild(title); 
 
-      const matchup = document.createElement("div");
+      const matchup = document.createElement("span");
       matchup.innerText = example_matchup + " ";
       match_element.appendChild(desc);
 
-      const result = document.createElement("img");
+      const result = document.createElement("span");
       result.src = example_result;
       match_element.appendChild(image);
 
