@@ -6,7 +6,7 @@ git clone https://github.com/openliberty/guide-docker.git [Die Website zum aufru
 cd guide-docker
 ls
 cd finish
-mvn --help |more
+mvn --help |more [listet auf, was Malven alles kann]
 mvn clean install
 docker build -t [name des Images] .
 docker images [zur kontrolle]
@@ -34,6 +34,11 @@ docker build -t [name des Images] .
 docker images [zur kontrolle]
 docker container list [auch zur kontrolle]
 docker run -dp 9080:9080 [name des Images]
+
+[SSH ip bis zum @ kopieren und als url in die script datein einfügen]
+[Beispiel]:
+ 
+ fetch('http://ip172-18-0-8-c7p8kp5mrepg00c9hgpg-9080.direct.labs.play-with-docker.com/system/properties-new')
 
 
 
