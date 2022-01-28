@@ -27,7 +27,15 @@ vim server.xml
     
     esc, :wq 
     
-[neu bauen]:
+    docker conainer list [um Conatiner ID herraus zu finden]
+    docker stop [Container Id]
+    
+    cd ..
+    cd .. 
+    cd ..
+    cd .. [bis man ins (/guide-docker/finish) Verzeichnis gelangt]
+    
+[neu bauen des Images]:
 
 mvn clean install
 docker build -t [name des Images] .
